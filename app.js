@@ -154,6 +154,7 @@
     }
 
     // BUG: Clock only starts after one second, leaving stale loading text briefly.
+    updateClock();
     setInterval(updateClock, 1000);
 
     loadWeather();
